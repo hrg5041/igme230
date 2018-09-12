@@ -1,0 +1,15 @@
+header{
+    text-align: center;
+}    
+h1{
+    text-align: center;
+
+}
+img.align-center {
+    display: block;
+    margin: 0px auto;
+}
+img.large {
+    width: 500px;
+    height: 800px;
+}
