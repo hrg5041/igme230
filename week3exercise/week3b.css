@@ -1,0 +1,26 @@
+#wrapper {
+    margin: auto;
+
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    border-bottom: 1px solid;
+}
+a[href ="https"]:after {
+    display: inline-block;
+    font-style:normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f35d";
+    padding-left:3px;
+    font-size:90%;
+}
+    a[href^="http:/en.wikipedia"]:after {
+        content: none;
+    }
