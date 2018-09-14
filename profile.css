@@ -11,10 +11,11 @@ body {
 
     
 }
-h2.subhead{
+h2{
     text-align: center; 
     font-family: "Bradley Hand";
     font-size:20px;
+
     
 }
 header{
@@ -56,7 +57,7 @@ h3:hover {
 }
 .projects{
     float: right;
-    margin: 5%
+    margin: 5%;
     
 }
 a {
