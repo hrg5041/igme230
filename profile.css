@@ -11,13 +11,16 @@ body {
 
     
 }
+h2.subhead{
+    text-align: center; 
+    font-family: "Bradley Hand";
+    font-size:20px;
+    
+}
 header{
     text-align: center;
     font-size:40px;
     margin: 40px 20px 40px 20px;
-    background-color: #054309;
-    
-    
     
 
 }
@@ -36,12 +39,7 @@ p{
     margin: 10px auto 10px auto;
     text-align: left;
 }
-.subhead{
-    text-align: center; 
-    font-family: "Bradley Hand";
-    font-size:20px;
-    
-}
+
 .exercises{
     float: left;
     margin: 5%;
@@ -49,9 +47,20 @@ p{
 }
 h3{
     margin-bottom: 50px;
+  margin:100px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+h3:hover {
+    background-color:#B4338A;
 }
 .projects{
     float: right;
     margin: 5%
+    
+}
+a {
+    text-decoration: none;
+    color: white;
     
 }

@@ -1,0 +1,5 @@
+# Add custom 404 error page
+ErrorDocument 404 /hrg5041/igme230/custom404.html
+
+# Turn off server Pagespeed module
+ModPagespeed off
