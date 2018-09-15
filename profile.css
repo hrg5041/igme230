@@ -1,7 +1,9 @@
+/* focuses on the main page ?*/
 #wrapper{
-    max-width: 100%;
+    max-width: 100%;   
     height: auto;
 }
+/* background color and type is chosen and makes sure txt is in the center*/
 body {
     
     background-color:#4D2994;
@@ -12,8 +14,9 @@ body {
 
     
 }
+/* puts the subheader in the center, header is associated in a box that is defined through display*/
 h2{
-    text-align: center; 
+    
     font-family: "Bradley Hand";
     display:block;
     font-size:20px;
@@ -24,7 +27,7 @@ h2{
 
 }
 header{
-    text-align: center;
+    
     font-size:40px;
     margin: 10px auto 10px auto;
     display:inline-block;
@@ -70,7 +73,6 @@ p{
 }
 h3{
     margin-bottom: 50px;
-    -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
     padding: 20px;
     
