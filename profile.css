@@ -26,6 +26,7 @@ h2{
     
 
 }
+/* makes the display within the text, so it doesn't protrude on any another header or piece. */
 header{
     
     font-size:40px;
@@ -36,6 +37,7 @@ header{
     
 
 }
+/* Centered image and its resizable depending on large the page is.*/
 img.align-center{
     display: block;
     margin: 0px auto;
@@ -44,6 +46,7 @@ img.align-center{
     
     
 }
+/* Text box is resizible depending on page. Also, given a max-width so that it doesn't over extend. */
 p{
     text-align: left;
     border-style:double;
@@ -56,6 +59,7 @@ p{
     
     
 }
+/* deals the projects and moves the row to the right side and gives a specified height*/
 .projects{
     float: right;
     height:450px;
@@ -63,6 +67,7 @@ p{
     background-color: #7D56FF;
     
 }
+/* deals with the exercise portion on the left side of the page. Also, a scroll because it focuses on the overextended piece that the text given*/
 .exercises{
     float: left;
     overflow: scroll;
@@ -71,17 +76,20 @@ p{
     background-color: #7D56FF;
 
 }
+/*Adds a fun transition that makes the website intract smoothier*/ 
 h3{
     margin-bottom: 50px;
     transition-duration: 0.4s;
     padding: 20px;
     
 }
+/* transition activates on the text to make noticibly that the bar has links*/
 h3:hover {
     background-color:#B4338A;
     
 }
 
+/* links don't turn a purple color and it doesn't have the underline for new pages*/
 a {
     text-decoration: none;
     color: white;
