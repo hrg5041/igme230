@@ -15,18 +15,21 @@ body {
 h2{
     text-align: center; 
     font-family: "Bradley Hand";
+    display:block;
     font-size:20px;
-    max-width:100%;
-    margin:40px auto 40px auto;
-    width:400px;
-
-
+    padding:10px;
+    margin: 10px 20px 10px 20px;
+    max-width: 100%;
     
+
 }
 header{
     text-align: center;
     font-size:40px;
-    margin: 10px 20px 10px 20px;
+    margin: 10px auto 10px auto;
+    display:inline-block;
+    height: 150px;
+    
     
 
 }
@@ -36,37 +39,47 @@ img.align-center{
     max-width: 100%;
     height: auto;
     
+    
 }
 p{
     text-align: left;
     border-style:double;
-    width:500px;
+    
     padding: 10px;
-    margin: 10px auto 10px auto;
+    margin: 20px auto 20px auto;
+    display: inline-block;
+    max-width: 500px;
+    
+    
     
 }
-
+.projects{
+    float: right;
+    height:450px;
+    margin-right: 10%;
+    background-color: #7D56FF;
+    
+}
 .exercises{
     float: left;
-    margin: 5%;
+    overflow: scroll;
+    height:450px;
+    margin-left: 10%;
+    background-color: #7D56FF;
 
 }
 h3{
     margin-bottom: 50px;
-    
     -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
-    padding:20px;
+    padding: 20px;
+    
 }
 h3:hover {
     background-color:#B4338A;
     
 }
-.projects{
-    float: right;
-    margin: 5%;
-    
-}
+
 a {
     text-decoration: none;
     color: white;
