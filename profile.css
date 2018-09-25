@@ -1,7 +1,9 @@
+/* focuses on the main page ?*/
 #wrapper{
-    max-width: 100%;
+    max-width: 100%;   
     height: auto;
 }
+/* background color and type is chosen and makes sure txt is in the center*/
 body {
     
     background-color:#4D2994;
@@ -12,61 +14,88 @@ body {
 
     
 }
+/* puts the subheader in the center, header is associated in a box that is defined through display*/
 h2{
-    text-align: center; 
+    
     font-family: "Bradley Hand";
+    display:block;
     font-size:20px;
+
     max-width:100%;
     margin:40px 100% 40px 37%;
     width:400px;
 
 
-    
-}
-header{
-    text-align: center;
-    font-size:40px;
+    padding:10px;
     margin: 10px 20px 10px 20px;
+    max-width: 100%;
     
 
 }
+/* makes the display within the text, so it doesn't protrude on any another header or piece. */
+header{
+    
+    font-size:40px;
+    margin: 10px auto 10px auto;
+    display:inline-block;
+    height: 150px;
+    
+    
+
+}
+/* Centered image and its resizable depending on large the page is.*/
 img.align-center{
     display: block;
     margin: 0px auto;
     max-width: 100%;
     height: auto;
     
+    
 }
+/* Text box is resizible depending on page. Also, given a max-width so that it doesn't over extend. */
 p{
     text-align: left;
     border-style:double;
-    width:500px;
+    
     padding: 10px;
-    margin: 10px auto 10px auto;
+    margin: 20px auto 20px auto;
+    display: inline-block;
+    max-width: 500px;
+    
+    
     
 }
-
+/* deals the projects and moves the row to the right side and gives a specified height*/
+.projects{
+    float: right;
+    height:450px;
+    margin-right: 10%;
+    background-color: #7D56FF;
+    
+}
+/* deals with the exercise portion on the left side of the page. Also, a scroll because it focuses on the overextended piece that the text given*/
 .exercises{
     float: left;
-    margin: 5%;
+    overflow: scroll;
+    height:450px;
+    margin-left: 10%;
+    background-color: #7D56FF;
 
 }
+/*Adds a fun transition that makes the website intract smoothier*/ 
 h3{
     margin-bottom: 50px;
-    
-    -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
-    padding:20px;
+    padding: 20px;
+    
 }
+/* transition activates on the text to make noticibly that the bar has links*/
 h3:hover {
     background-color:#B4338A;
     
 }
-.projects{
-    float: right;
-    margin: 5%;
-    
-}
+
+/* links don't turn a purple color and it doesn't have the underline for new pages*/
 a {
     text-decoration: none;
     color: white;
