@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="form.css">
+    <title>Week 7 exercise: HTML Form</title>
+</head>
+<body>
+    <!-- Links to the handling form page which corresponds to the post method -->
+    <form>
+        <div>
+            <label for = "name">Name:</label>
+        <!-- makes one line of text possible for the user  -->
+            <input type = "text" id = "name" name = "user_name">  
+        </div>
+        <div>
+            <label for = "E-mail">Email:</label>
+            <input type = "text" id = "E-mail" name = "user_mail"> 
+        </div>
+        <div>
+            <label for = "message">Message:</label>
+            <!-- Makes a text area box that you type multi-line text -->
+            <textarea id = "message" name = "user_message"></textarea>
+        </div>
+        <div class="button">
+        <!-- the button type is a submit button that should go to another page -->
+                <button type="button">Send your message</button>
+        </div>
+    </form>
+
+</body>
+</html>
