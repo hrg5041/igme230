@@ -47,8 +47,6 @@
 		let info = document.querySelector("#info");
 		let button = document.querySelector("button");
 		let legend = document.querySelector("legend");
-
-		
 		let input = document.querySelectorAll("input");
 		let value = "none";
         for (let i = 0; i < 4; i++){
@@ -68,13 +66,10 @@
 		}
 		button.onclick = function (e) {
 			info.innerHTML = ("Your FINAL CHOICE is " + value);
-			e.target.style.backgroundColor = value;  
+			legend.style.color = value;  
         }
 		}
-		
-     
-         
-        
+	
 	</script>
 </body>
 
