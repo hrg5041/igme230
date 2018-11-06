@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> 
+.mygrid {
+        display: grid;
+        height:100vh;
+        grid-template-columns: 150px, 1fr, 1fr;
+        grid-template-rows:100px 1fr 1fr 50px; 
+    }
+    .mygrid div{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        background-color: pink;
+        border: 1px dotted green;
+    }
+    .titlebar {
+    
+        grid-column-start: 1;
+        /* uses last item in order to put in another grid*/
+        grid-column-end: -1;
+
+        grid-column: 1/ span 3;
+    }
+    </style>
+</head>
+<body>
+    <div class="mygrid">
+        <div class="titlebar">Cell 1</div>
+        <div>Cell 2</div>
+        <div>Cell 3</div>
+        <div>Cell 4</div>
+        <div>Cell 5</div>
+        <div>Cell 6</div>
+        <div>Cell 7</div>
+        <div>Cell 8</div>
+        <div>Cell 9</div>
+        <div>Cell 10</div>
+        <div>Cell 11</div>
+        <div>Cell 12</div>
+
+    </div>
+</body>
+</html>

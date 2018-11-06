@@ -1,0 +1,419 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+
+body {
+    background-color: #904c77;
+    color: #FAF1EB;
+}
+
+header,
+.navbar,
+h1 {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4D2993;
+    color: #FAF1EB;
+}
+
+
+header {
+    text-align: center;
+
+    padding: 50px;
+    font-size: 3.5vw;
+    padding-bottom: 10%;
+    
+
+
+
+
+
+}
+
+.navbar {
+
+    background-color: #4D2993;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 6%;
+
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 0 0 0 rgba(0,0,0,0.19);
+
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    position: relative;
+    float: left;
+    color: #FAF1EB;
+    padding: 16px;
+    width: 16.66%;
+    text-decoration: none;
+    font-size: 1.5vw;
+    background-color: #4D2993;
+    text-align: center;
+    padding-bottom: 10%;
+
+
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+
+    color: black;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.leftside h2 {
+
+    font-size: 4vw;
+    background-color: #AE91A3;
+    float: left;
+    padding: 20%;
+    padding-left: 15%;
+    width: 50%;
+    text-align: center;
+}
+
+.rightside {
+    background-color: #904c77;
+    font-size: 2vw;
+    float: right;
+    text-align: center;
+    padding: 75px;
+    padding-top: 25%;
+    padding-bottom: 27%;
+    width: 50%;
+
+}
+
+
+.Animal .rightside {
+    padding-top: 15%;
+}
+
+.Flower .rightside {
+    padding-top: 15%;
+}
+
+.Resume .rightside {
+    text-align: left;
+    padding-top: 6%;
+    font-size: 1.5vw;
+}
+
+.Resume h4 {
+    font-size: 1.5vw;
+}
+
+.Resume p {
+    font-size: 1vw;
+}
+
+.Contact .rightside {
+    padding-top: 4%;
+    padding-bottom: 25%;
+}
+
+.Contact h2 {
+    padding-bottom: 30%;
+}
+
+.button {
+    width:75%;
+    background-color: rgb(177, 39, 124);
+    border: none;
+    color: #FAF1EB;
+    padding:  5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    border-radius: 12px;
+    margin-top: 12%;
+
+}
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 35px;
+    background-color: rgb(90, 90, 90);
+    text-align: center;
+
+}
+
+article {
+    position: fixed;
+    height: 1000px;
+    
+    font-size: 1.5vw;
+    background-color: #904c77;
+    float: left;
+    padding: 5%;
+    margin-top:5%;
+    width: 50%;
+    text-align: center;
+}
+
+aside {
+    background-color: #904c77;
+    float: right;
+    text-align: center;
+    /* padding: 75px; */
+
+    width: 50%;
+}
+
+img {
+    display: block;
+    margin: 0px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Scrollbar makes the track into a magenta color and the thumb is a off-white color */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    border: 0px solid rgb(177, 39, 124);
+
+}
+
+::-webkit-scrollbar {
+
+    background-color: rgb(177, 39, 124);
+    border-radius: 40px;
+    width: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: #FAF1EB;
+}
+
+form {
+    float: left;
+    font-size: 24px;
+    background-color: #FAF1EB;
+    margin: 10%;
+
+    margin-left: 25%;
+    padding: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-content: center;
+    border-radius: 10px;
+
+}
+
+label {
+    color: black;
+}
+
+button {
+    background-color: rgb(177, 39, 124);
+    border-radius: 10px;
+}
+
+/* Index page focused CSS */
+.indexhead h1{
+    text-align:center;
+    font-size:7vw;
+    padding:10%;
+    max-width:100%;
+    padding-top:5%;
+    padding-bottom: 15%;
+}
+.indexbutton {
+    width:25%;
+    background-color: rgb(177, 39, 124);
+    border: none;
+    color: #FAF1EB;
+    padding:  32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3vw;
+    border-radius: 12px;
+    margin-top: 12%;
+    margin-left:10%;
+    
+}
+.indexbutton {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+     header{
+        text-align: center;
+        padding: 25px;
+        font-size: 5vw;
+        padding-bottom: 10%;
+        
+
+      }
+      .navbar{
+        width: 100%;
+        
+      }
+      header,
+      .navbar,
+      h1 {
+          position: relative;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          background-color: #4D2993;
+          color: #FAF1EB;
+      }
+      .rightside {
+        background-color: #904c77;
+        font-size: 2vw;
+        float: right;
+        text-align: center;
+        padding: 75px;
+        padding-top: 25%;
+        padding-bottom: 25%;
+        width: 50%;
+    
+    }
+    
+    .Animal .rightside {
+        padding-top: 9%;
+    }
+    
+    .Flower .rightside {
+        padding-top: 5%;
+    }
+    
+    .Resume .rightside {
+        text-align: left;
+        padding-top: 2%;
+        font-size: 1.5vw;
+        padding-bottom:21%;
+    }
+    
+    .Resume h4 {
+        font-size: 1.5vw;
+    }
+    
+    .Resume p {
+        font-size: 1vw;
+    }
+    
+    .Contact.rightside {
+        padding-top: 2%;
+        padding-bottom: 30%;
+        height:100px;
+        
+    }
+   
+    
+    .Contact h2 {
+        padding-bottom: 41%;
+    }
+    .Poster .button{
+        text-decoration: none;
+    }
+    .Animal .button{
+
+    }
+    .Flower .button{
+
+    }
+    .Resume .button{
+
+    }
+    .Contact .button{
+
+    }
+    .button {
+        background-color: rgb(177, 39, 124);
+        border: none;
+        color: #FAF1EB;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 12px;
+        margin-top: 30px;
+    
+    }
+    
+    .Resume .button {
+        margin-left: 20%;
+    }
+    
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        padding: 35px;
+        background-color: rgb(90, 90, 90);
+        text-align: center;
+    
+    }
+    
+    article {
+        position: fixed;
+        height: 1000px;       
+        font-size: 1.5vw;
+        background-color: #904c77;
+        float: left;
+        padding: 5%;
+        margin-top:5%;
+        width: 50%;
+        text-align: center;
+    }
+    
+    aside {
+        background-color: #904c77;
+        float: right;
+        text-align: center;
+        /* padding: 75px; */
+        width: 50%;
+    }
+    
+    img {
+        display: block;
+        margin: 0px auto;
+        max-width: 100%;
+        height: auto;
+    }
+    /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+}
