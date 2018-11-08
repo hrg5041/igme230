@@ -18,14 +18,22 @@
         align-items: center;
         background-color: pink;
         border: 1px dotted green;
+
     }
     .titlebar {
     
-        grid-column-start: 1;
+        /* grid-column-start: 1;
         /* uses last item in order to put in another grid*/
-        grid-column-end: -1;
+       /* grid-column-end: -1; */
 
         grid-column: 1/ span 3;
+    }
+    .sidebar {
+        grid-row: 2/-2;
+
+    }
+    .footer{
+        grid-column 1/ span 3;
     }
     </style>
 </head>
