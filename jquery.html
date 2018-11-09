@@ -8,10 +8,12 @@
 
     <title>jQuery</title>
     <style>
-        #panel1, #panel2 {
+        #panel1,
+        #panel2,
+        #smiler {
             background-color: pink;
-            height:100px;
-            width:100px;
+            height: 100px;
+            width: 100px;
             margin-bottom: 2em;
         }
     </style>
@@ -21,6 +23,7 @@
 <body>
     <button id="show">show</button>
     <button id="hide">hide</button>
+    <button id="move">move</button>
 
     <div id="panel1">
         I have text here
@@ -29,17 +32,30 @@
     <div id="panel2">
         There's more text
     </div>
+    <div id="smiler">
+        <p>:D</p>
+    </div>
 
     <script>
-            $("#hide").click(function () {
-                $("#panel1").hide();
-            });
+        $("#hide").click(function () {
+            $("#panel1").hide();
+        });
+
+        $("#show").click(function () {
+            $("#panel1").show();
+        });
         
-            $("#show").click(function () {
-                $("#panel1").show();
+            $("#move").click(function () {
+                $("p").animate({
+                left: '250px'
+
+
+
+                });
             });
-        </script>
-        
+    
+    </script>
+
 </body>
 
 </html>
