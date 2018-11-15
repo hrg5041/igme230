@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>week 12:Interactivity Exercise</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .wrapper {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #page1 {
+            background-color: tomato;
+
+        }
+
+        #page2 {
+            background-color: orange;
+        }
+
+        #page3 {
+            background-color: rgb(150, 130, 100);
+        }
+
+        .wrapper h1,h2{
+            display: flex;
+            justify-content: center;
+
+        }
+
+        h1 h2{
+            display: flex;
+        }
+        h2{
+            text-decoration-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper" id="page1">
+        <h1>RED</h1>
+        <h2><a href="#page2">Next Color</a></h2>
+    </div>
+    <div class="wrapper" id="page2">
+        <h1>ORANGE</h1>
+        <h2><a href="#page3">Next Color</a></h2>
+    </div>
+    <div class="wrapper" id="page3">
+        <h1>TAN</h1>
+        <h2><a href="#page1">Next Color</a></h2>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>
