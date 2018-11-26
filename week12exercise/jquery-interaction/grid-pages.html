@@ -167,8 +167,8 @@
             let target = $(this.hash);
             $('html, body').animate({ scrollTop: target.offset().top }, 500);
 
-            // Make this more accessible by setting target.focus(); 
-            // See https://css-tricks.com/smooth-scrolling-accessibility/ for details
+            //Make this more accessible by setting target.focus(); 
+            //See https://css-tricks.com/smooth-scrolling-accessibility/ for details
 
             if (target.is(":focus")) { // Checking if the target was focused
                 return false;
