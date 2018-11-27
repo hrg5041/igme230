@@ -14,6 +14,9 @@
 <body>
     <form method="post" action="formmail.php" name="ContactForm"> 
             <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+            <input type="hidden" name="recipients" value="hrg5041@rit.edu" />
+            <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+            <input type="hidden" name="subject" value="Test Mail from Contact Form" />
         <h1>Henry Grant's Contact Form</h1>
 
         <fieldset>
