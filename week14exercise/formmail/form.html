@@ -7,16 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="form.css">
-    
+
     <title>Henry Grant's Contact Form</title>
 </head>
 
 <body>
-    <form method="post" action="formmail.php" name="ContactForm"> 
-            <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
-            <input type="hidden" name="recipients" value="hrg5041@rit.edu" />
-            <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
-            <input type="hidden" name="subject" value="Test Mail from Contact Form" />
+    <form method="post" action="formmail.php" name="ContactForm">
+        <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER"/>
+        <input type="hidden" name="recipients" value="hrg5041@rit.edu"/>
+        <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name"/>
+        <input type="hidden" name="subject" value="Test Mail from Contact Form"/>
+        <input type="hidden" name="good_url" value="success.html" />
         <h1>Henry Grant's Contact Form</h1>
 
         <fieldset>
@@ -24,19 +25,19 @@
 
             <div class="inputs">
                 <label for="fullname">Your Full Name:</label>
-                <input type="text" name="fullname" size="30">
+                <input type="text" name="FullName" size="30">
             </div>
 
-            <div class="inputs">
+            <div class="inputs" name="EmailAddr" pattern=".+rit.edu" size="30">
                 <label for="useremail">Your RIT Email:</label>
-                <input type="email" name="useremail" pattern=".+rit.edu" size="30">
+                <input type="email" name="EmailAddr" pattern=".+rit.edu" size="30">
             </div>
 
         </fieldset>
 
         <div id="commentsection">
             <label for="comments">Comments:</label>
-        <textarea name="comments">Put your comments here...</textarea>
+            <textarea name="mesg">Put your comments here...</textarea>
         </div>
 
         <label for="response">Would You Like a Response?</label>
