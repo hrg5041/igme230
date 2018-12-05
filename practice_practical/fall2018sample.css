@@ -42,12 +42,60 @@ nav, aside {
 Your Formatting
 ***************/
 
-#wrapper{
+#mygrid{
     display: grid;
     width:90vw;
     max-width:1200px;
     min-height: 100vh;
     grid-template-rows:4em 1fr 3em; 
-    grid-template-columns: .33fr 1fr 100px;
+    grid-template-columns: 1fr 3fr 200px;
+    grid-template-areas: "a a a" "d c b" "e e e";
+
     
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: a;
+}
+nav{
+    grid-area: b;
+}
+.menubox{
+    background-color: white;
+    margin:none;
+    border: 1px solid white;
+}
+ul{
+    list-style: none;
+    margin:none;
+    padding:none;
+}
+ul.submenu{
+    
+    display: none;
+    padding-left:.25em;
+    background-color: lightgrey;
+}
+article{
+    grid-area: c;
+}
+aside{
+    grid-area: d;
+}
+footer{
+    grid-area: e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 600px){
+    
+    #mygrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px .5fr 2fr .5fr .5fr;
+        grid-template-areas: "a" "b" "c" "d" "e";
+    }
+   
 }
