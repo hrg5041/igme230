@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    
+}
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: #86af49;
+}
+nav,
+aside,
+article {
+    padding: .5rem;
+}
+
+body{
+    display:grid;
+    width:100%;
+    min-height:600vh;
+    grid-template-rows: 200px 50px 1fr 1fr 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a a a a a a a a a a"
+                        "b b b b b b b b b b"
+                        "d d d d d c c c c c"
+                        "d d d d d c c c c c"
+                        "d d d d d c c c c c"
+                        "e e e e e e e e e e";
+                        
+}
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-area:a;
+    
+}
+nav{
+    display:grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 35px;
+    grid-template-areas: " one two three four five";
+    background-color:pink;
+    grid-area:b;
+    
+}
+p.one, p.two, p.three, p.four, p.five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p.one{
+    
+    grid-area:one;
+    
+}
+p.two{
+    grid-area: two;
+}
+p.three{
+    grid-area: three;
+}
+p.four{
+    grid-area:four;
+}
+p.five{
+    grid-area:five;
+}
+
+
+article{
+    background-color: lavender;
+    grid-area:c;
+
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+aside{
+    background-color: lightblue;
+    grid-area:d;
+
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+p.un{
+    display:grid;
+}
+footer{
+    grid-area:e;
+}
