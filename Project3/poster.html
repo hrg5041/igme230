@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="project3.css">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.js"></script>
+    <link rel="scriptsheet" href="project3.js">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Flower Power Project</title>
+</head>
+
+<body>
+    <div id="postergrid">
+        <header>
+            <h1>Body Positivity Poster</h1>
+        </header>
+        <nav>
+            <p class="one">Home</li>
+                <p class="two">Body Positivity Poster</li>
+                    <p class="three">Animal Word</li>
+                        <p class="four">Flower Power Program</li>
+                            <p class="five">Resume</li>
+                                <p class="si">Contact</p>
+
+        </nav>
+        <div id="posterdesc">
+            <h3 class="posterdesc">Formulated as a class project to
+                illustrate our skills in Adobe
+                Illustrator. We were assigned to
+                create a poster that would invite
+                an potential audience to attend.
+                We made three different design
+                approaches.
+            </h3>
+        </div>
+
+        <div id="posterimages">
+            <img class="posterone" src="images/Henry-Grant-Project3-Exploration1.png" alt="Body Positive" title="Body Positive Image 1" />
+            <img class="postertwo" src="images/Henry-Grant-Project3-Exploration2.png" alt="Body Positive" title="Body Positive Image 2" />
+            <img class="posterthree" src="images/Henry-Grant-Project3-Final.png" alt="Body Positive" title="Body Positive Image 3" />
+        </div>
+        <footer>
+            <h2>BACK TO THE TOP</h2>
+        </footer>
+    </div>
+</body>
+
+</html>
+<script>
+        $(document).ready(function () {
+           $("footer").click(function () {
+               $("html, body").animate({
+                   scrollTop: 0
+               }, "slow");
+   
+           });
+       });
+   </script>

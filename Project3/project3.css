@@ -1,7 +1,8 @@
-*{
+* {
     box-sizing: border-box;
-    
+    font-family: 'Lato', sans-serif;
 }
+
 html,
 body {
     padding: 0;
@@ -12,86 +13,560 @@ header,
 footer {
     background-color: #86af49;
 }
+
 nav,
 aside,
 article {
     padding: .5rem;
 }
 
-body{
-    display:grid;
-    width:100%;
-    min-height:600vh;
+body {
+    color: #FAF1EB;
+}
+a {text-decoration: none; color: #FAF1EB;}
+#projectgrid {
+    display: grid;
+    width: 100%;
+    min-height: 600vh;
     grid-template-rows: 200px 50px 1fr 1fr 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "a a a a a a a a a a"
-                        "b b b b b b b b b b"
-                        "d d d d d c c c c c"
-                        "d d d d d c c c c c"
-                        "d d d d d c c c c c"
-                        "e e e e e e e e e e";
-                        
+    grid-template-areas:
+        "a a a a a a a a a a"
+        "b b b b b b b b b b"
+        "projects projects projects projects projects projects projects projects projects projects"
+        "projects projects projects projects projects projects projects projects projects projects"
+        "projects projects projects projects projects projects projects projects projects projects"
+        "e e e e e e e e e e";
+
+    color: #FAF1EB;
 }
-header{
-    display:flex;
+
+#indexgrid {
+    display: grid;
+    width: 100%;
+
+    min-height: 100vh;
+    grid-template-rows: 200px 50px 1fr .1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "a a a a a a a a a a"
+        "b b b b b b b b b b"
+        "indexpic indexpic indexpic indexpic indexpic  indexdesc indexdesc indexdesc indexdesc indexdesc "
+        "e e e e e e e e e e";
+}
+
+
+img.indexpic {
+    grid-area: indexpic;
+}
+
+#indexdesc {
+    background-color: #904c77;
+    grid-area: indexdesc;
+    display: flex;
     justify-content: center;
     align-items: center;
-    grid-area:a;
+
+
+}
+
+p.index {
+
+    background-color: rgb(189, 15, 122);
+    border: none;
+    color: #FAF1EB;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+    font-size: 2vw;
+    border-radius: 12px;
+
+
+}
+
+p.index:hover {
+    background-color: #AE91A3;
+}
+
+#postergrid {
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-rows: 200px 50px 1fr .01fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a a a a a a a a a a"
+        "b b b b b b b b b b"
+        "posterimages posterimages posterimages posterimages posterimages  posterdesc posterdesc  posterdesc  posterdesc  posterdesc  "
+        "e e e e e e e e e e";
+
+}
+
+#posterdesc {
+    background-color: #904c77;
+    grid-area: posterdesc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
-nav{
-    display:grid;
+
+img.posterone, img.postertwo, img.posterthree {
+    grid-area: posterimages;
+    width:500%;
+    height:1fr;
+
     
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 35px;
-    grid-template-areas: " one two three four five";
-    background-color:pink;
-    grid-area:b;
+
+}
+h3.posterdesc{
+    margin:10%;
     
 }
-p.one, p.two, p.three, p.four, p.five{
+#animalgrid {
+    display: grid;
+    width: 100%;
+    background-color:#904c77;
+    min-height: 100vh;
+    grid-template-rows: 200px 50px 1fr .1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "a a a a a a a a a a"
+        "b b b b b b b b b b"
+        "animalpic animalpic animalpic animalpic animalpic animaldesc animaldesc animaldesc animaldesc animaldesc "
+        "e e e e e e e e e e";
+}
+#animaldesc{
+    grid-area: animaldesc;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-p.one{
-    
-    grid-area:one;
+img.animalpic{
+    grid-area: animalpic;
+    width:500%;
+    height: 100%;
+}
+h3.animaldesc{
+    margin:10%;
     
 }
-p.two{
+#flowergrid{
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-rows: 200px 50px 1fr .01fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "a a a a a a a a a a"
+        "b b b b b b b b b b"'
+        "flowerpics flowerpics flowerpics flowerpics flowerpics flowerdesc flowerdesc flowerdesc flowerdesc flowerdesc"
+        "e e e e e e e e e e"
+}
+#flowerarticle{
+    grid-area: flowerdesc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img.flowerone, img.flowertwo, img.flowerthree{
+    grid-area: flowerpics;
+    width:100%;
+    
+}
+
+#resumegrid{
+    display: grid;
+    width: 100%;
+    background-color:#904c77;
+    min-height: 100vh;
+    grid-template-rows: 200px 50px 1fr 1fr .1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "a a a a a a a a a a"
+        "b b b b b b b b b b"
+         "resume resume resume resume resume resume resume resume resume resume" 
+        "resume resume resume resume resume resume resume resume resume resume"
+        "e e e e e e e e e e";
+}
+#res_desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: resume;
+    margin:5%;
+}
+h4.edu{
+    font-size:17pt;
+}
+header {
+    font-size: 3.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: a;
+    background-color: #4D2993;
+
+}
+
+#circle {
+    width: 50px;
+    height: 50px;
+    background: #FAF1EB;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin-left: -25px;
+    margin-top: -120px;
+    z-index: 4;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+
+#scrollbar {
+    z-index: 3;
+    border: 10px solid rgb(189, 15, 122);
+    height: 600vh;
+    max-height: 550vh;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    top: 40vh;
+    border-radius: 15px;
+}
+
+nav {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 35px;
+    grid-template-areas: " one two three four five si";
+    background-color: pink;
+    grid-area: b;
+    background-color: #4D2993;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 0 0 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+    height: 100%;
+}
+
+div.poster,
+div.animal,
+div.flower,
+div.resume,
+div.contact {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.one,
+p.two,
+p.three,
+p.four,
+p.five,
+p.si {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+
+
+
+}
+
+p.one {
+    grid-area: one;
+}
+
+p.two {
     grid-area: two;
 }
-p.three{
+
+p.three {
     grid-area: three;
 }
-p.four{
-    grid-area:four;
-}
-p.five{
-    grid-area:five;
+
+p.four {
+    grid-area: four;
 }
 
+p.five {
+    grid-area: five;
+}
 
-article{
-    background-color: lavender;
-    grid-area:c;
+p.si {
+    grid-area: si;
+}
 
-    display:grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+p.one:hover,
+p.two:hover,
+p.three:hover,
+p.four:hover,
+p.five:hover,
+p.si:hover {
+    color: black;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "d c""d c""d c""d c""d c";
+    grid-area: projects;
+}
+
+article {
+    background-color: #904c77;
+    grid-area: c;
+    font-size: 2vw;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "page1article""page2article""page3article""page4article""page5article""page6article";
 }
 
 
-aside{
-    background-color: lightblue;
-    grid-area:d;
+aside {
+    text-align: center;
+    font-size: 4vw;
+    grid-area: d;
+    background-color: #AE91A3;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "page1aside""page2aside""page3aside""page4aside""page5aside""page6aside";
+}
 
-    display:grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+p.un,
+p.deux,
+p.trois,
+p.quatre,
+p.cinq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-p.un{
-    display:grid;
+
+p.un {
+    grid-area: page1aside;
 }
-footer{
-    grid-area:e;
+
+p.deux {
+    grid-area: page2aside;
+}
+
+p.trois {
+    grid-area: page3aside;
+}
+
+p.quatre {
+    grid-area: page4aside;
+}
+
+p.cinq {
+    grid-area: page5aside;
+}
+
+p.uno,
+p.bro,
+p.love,
+p.kill,
+p.me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+
+}
+
+p.uno {
+    grid-area: page1article;
+}
+
+p.bro {
+    grid-area: page2article;
+}
+
+p.love {
+    grid-area: page3article;
+}
+
+p.kill {
+    grid-area: page4article;
+}
+
+p.me {
+    grid-area: page5article;
+}
+
+div.poster,
+div.animal,
+div.flower,
+div.resume,
+div.contact {
+    flex-direction: column;
+    padding: 5vw;
+}
+
+div.button {
+    background-color: rgb(189, 15, 122);
+    border: none;
+    color: #FAF1EB;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+    font-size: 2vw;
+    border-radius: 12px;
+
+}
+
+div.button:hover {
+    background-color: #AE91A3;
+}
+
+footer {
+    background-color: rgb(90, 90, 90);
+    grid-area: e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+footer:hover {
+    background-color: #4D2993;
+}
+
+#mobileaside,
+#mobilearticle {
+    display: none;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: rgb(189, 15, 122);
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    width:100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #AE91A3;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #904c77;
+    padding: 20px;
+
+  }
+
+@media screen and (max-width: 600px) {
+
+    #projectgrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .5fr 4fr .5fr;
+        grid-template-areas: "a""b""projects""e";
+
+    }
+
+
+    #circle {
+        display: none;
+    }
+
+    #scrollbar {
+        display: none;
+    }
+
+    nav {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: " one ""two ""three""four""five""si";
+
+    }
+
+    p.one,
+    p.two,
+    p.three,
+    p.four,
+    p.five,
+    p.si {
+        font-size: 12px;
+    }
+
+
+    div#projects {
+
+        grid-template-columns: 1fr;
+
+        grid-template-areas: "c""c""c""c""c";
+        width: 100%;
+    }
+
+    p.uno,
+    p.bro,
+    p.love,
+    p.kill,
+    p.me {
+
+        font-size: 14pt;
+    }
+
+    aside {
+        display: none;
+    }
+
+    #indexgrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .5fr 1fr .5fr .25fr;
+        grid-template-areas: "a""b""indexpic""indexdesc""e";
+    }
+
+    p.index {
+        font-size: 12pt;
+    }
+    #postergrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .5fr .5fr .5fr .01fr;
+        grid-template-areas: "a""b""posterdesc""posterimages""e";
+    }
+    img.posterone, img.postertwo, img.posterthree {
+       
+        width:100%;
+        height:1fr;
+}
+    #animalgrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .5fr .5fr .5fr .01fr;
+        grid-template-areas: "a""b""animaldesc""animalpic""e";
+    }
+    img.animalpic{
+        width:100%;
+    }
 }
