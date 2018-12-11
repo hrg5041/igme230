@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="project3.css">
-
+    
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.js"></script>
-
-    <link rel="scriptsheet" href="project3.js">
+    <script src="project3.js"></script> 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Flower Power Program</title>
 </head>
@@ -20,16 +19,28 @@
             <h1>Flower Power Project</h1>
         </header>
         <nav>
-            <p class="one">Home</li>
-                <p class="two">Body Positivity Poster</li>
-                    <p class="three">Animal Word</li>
-                        <p class="four">Flower Power Program</li>
-                            <p class="five">Resume</li>
-                                <p class="si">Contact</p>
+                <a href="index.html">
+                        <p class="one">Home</p>
+                    </a>
+                    <a href="poster.html">
+                        <p class="two">Body Positivity Poster</p>
+                    </a>
+                    <a href="animal_word.html">
+                        <p class="three">Animal Word</p>
+                    </a>
+                    <a href="flower_power.html">
+                        <p class="four">Flower Power Program</p>
+                    </a>
+                    <a href="resume.html">
+                        <p class="five">Resume</p>
+                    </a>
+                    <a href="contact.html">
+                    <p class="si">Contact</p>
+                </a>
         </nav>
         <div id="flowerarticle">
 
-            <h3>Used the canvas to make new
+            <h3 class="flowerarticle">Used the canvas to make new
                 forms of pixels. These pixels are
                 manipulated from the program
                 and the mouse manipulates a
@@ -39,24 +50,47 @@
 
         </div>
         <div id="floweraside">
-        
-            <img class="flowerone"src="images/FlowerProj_1.png" alt="Flower Power">
-        
-        
-            <img class="flowertwo" src="images/FlowerProj_2.png" alt="Flower Power">
-        
-        
-            <img class="flowerthree" src="images/FlowerProj_3.png" alt="Flower Power">
-        
+            <div class="mySlides">
+                <img class="flowerone" src="images/FlowerProj_1.png" alt="Flower Power">
+            </div>
+            <div class="mySlides">
+                <img class="flowertwo" src="images/FlowerProj_2.png" alt="Flower Power">
+            </div>
+            <div class="mySlides">
+                <img class="flowerthree" src="images/FlowerProj_3.png" alt="Flower Power">
+            </div>
+            <a class="prevflower" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="nextflower" onclick="plusSlides(1)">&#10095;</a>
 
-       
-        
-    </div>
 
-    <footer>
-        <h2>BACK TO THE TOP</h2>
-    </footer>
-    </div>
+                </div>
+
+                <footer>
+                    <h2>BACK TO THE TOP</h2>
+                </footer>
+            </div>
 </body>
 
 </html>
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+

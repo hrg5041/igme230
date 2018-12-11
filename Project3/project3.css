@@ -43,10 +43,9 @@ a {text-decoration: none; color: #FAF1EB;}
 
 #indexgrid {
     display: grid;
-    width: 100%;
-
-    min-height: 100vh;
-    grid-template-rows: 200px 50px 1fr .1fr;
+    width: 100vw;
+    min-height: 100%;
+    grid-template-rows: 200px 50px 7fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "a a a a a a a a a a"
@@ -58,6 +57,8 @@ a {text-decoration: none; color: #FAF1EB;}
 
 img.indexpic {
     grid-area: indexpic;
+    width:100%;
+    height: 100%;
 }
 
 #indexdesc {
@@ -66,6 +67,7 @@ img.indexpic {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 
 }
@@ -80,7 +82,7 @@ p.index {
     padding-bottom: 1%;
     text-align: center;
     text-decoration: none;
-    width: 50%;
+    
     font-size: 2vw;
     border-radius: 12px;
 
@@ -91,15 +93,17 @@ p.index:hover {
     background-color: #AE91A3;
 }
 
+
 #postergrid {
     display: grid;
     width: 100%;
     min-height: 100vh;
     grid-template-rows: 200px 50px 1fr .01fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "a a a a a a a a a a"
+    grid-template-areas: 
+        "a a a a a a a a a a"
         "b b b b b b b b b b"
-        "posterimages posterimages posterimages posterimages posterimages  posterdesc posterdesc  posterdesc  posterdesc  posterdesc  "
+        "posterimages posterimages posterimages posterimages posterimages posterdesc posterdesc  posterdesc  posterdesc  posterdesc"
         "e e e e e e e e e e";
 
 }
@@ -156,13 +160,14 @@ h3.animaldesc{
 #flowergrid{
     display: grid;
     width: 100%;
-    min-height: 100vh;
-    grid-template-rows: 200px 50px 1fr .01fr;
+    min-height: 100%;
+    background-color:#904c77;
+    grid-template-rows: 10% 50px 35vw .01fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "a a a a a a a a a a"
-        "b b b b b b b b b b"'
-        "flowerpics flowerpics flowerpics flowerpics flowerpics flowerdesc flowerdesc flowerdesc flowerdesc flowerdesc"
+        "b b b b b b b b b b"
+        "flowerpics flowerpics flowerpics flowerpics flowerpics flowerpics flowerpics flowerdesc flowerdesc flowerdesc"
         "e e e e e e e e e e"
 }
 #flowerarticle{
@@ -170,19 +175,85 @@ h3.animaldesc{
     display: flex;
     justify-content: center;
     align-items: center;
+    
+   
+}
+h3.flowerarticle{
+    padding:20px;
+    font-size:2vw;
 }
 img.flowerone, img.flowertwo, img.flowerthree{
     grid-area: flowerpics;
-    width:100%;
+    width:700%;
+    max-height:60vh;
+    
     
 }
-
+.mySlides {
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .prevflower,
+.nextflower {
+  cursor: pointer;
+  position: absolute;
+  top: 65vh;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 3;
+}
+.nextflower {
+    right:30vw;
+    border-radius: 3px 0 0 3px;
+  }
+  .prevflower:hover,
+.nextflower:hover {
+  background-color: rgb(189, 15, 122);
+}
+/* .mySlidesPoster {
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+.prevposter,
+.nextposter {
+  cursor: pointer;
+  position: absolute;
+  top: 65%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.nextposter {
+    right:50vw;
+    border-radius: 3px 0 0 3px;
+  }
+  .prevposter:hover,
+.nextposter:hover {
+  background-color: rgb(189, 15, 122);
+}
 #resumegrid{
     display: grid;
     width: 100%;
     background-color:#904c77;
     min-height: 100vh;
-    grid-template-rows: 200px 50px 1fr 1fr .1fr;
+    grid-template-rows: 100px 50px 1fr 1fr .1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "a a a a a a a a a a"
@@ -192,14 +263,106 @@ img.flowerone, img.flowertwo, img.flowerthree{
         "e e e e e e e e e e";
 }
 #res_desc{
+    display: grid;
+    grid-area: resume;
+    margin:5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "obj edu"
+    "exp leader"
+    "skills skills"
+
+}
+h4.edu,h4.obj,h4.exp,h4.leader,h4.skills{
+    font-size:2vw;
+    background-color: #AE91A3;
+    margin:10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h4.skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:3vw; 
+}
+p.obj,p.edu,p.exp,p.leader{
+    padding:4%;
+    font-size:1.5vw;
+}
+#obj{
+    grid-area:obj;
+    
+}
+#edu{
+    grid-area:edu;
+}
+#exp{
+    grid-area:exp;
+}
+#leader{
+    grid-area:leader;
+}
+#skills{
+    grid-area:skills;
+    background-color: #AE91A3;
+    border-radius: 10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr;
+    grid-template-areas: 
+    "skillstop skillstop skillstop skillstop skillstop skillstop skillstop"
+    "listone listtwo listthree listfour listfive listsix listseven";
+
+   
+}
+
+
+h4.skills{
+    grid-area:skillstop;
+}
+div.list {
+    
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size:2vw;
+    
+
+}
+p.numone,p.numtwo,p.numthree, p.numfour, p.numfive,p.numsix,p.numseven{
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: resume;
-    margin:5%;
+    font-size: 2vw;
 }
-h4.edu{
-    font-size:17pt;
+p.numone{
+    grid-area:listone;
+}
+p.numtwo{
+    grid-area:listtwo;
+    
+}
+p.numthree{
+    grid-area:listthree;
+}
+p.numfour{
+    grid-area:listfour;
+}
+p.numfive{
+    grid-area:listfive;
+}
+p.numsix{
+    grid-area:listsix;
+}
+p.numseven{
+    grid-area:listseven;
 }
 header {
     font-size: 3.5vw;
@@ -250,6 +413,7 @@ nav {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 0 0 0 rgba(0, 0, 0, 0.19);
     z-index: 1;
     height: 100%;
+    
 }
 
 div.poster,
@@ -270,9 +434,11 @@ p.four,
 p.five,
 p.si {
     display: flex;
-    align-items: center;
+    
     justify-content: center;
     font-size: 1.5vw;
+    margin:0;
+    
 
 
 
@@ -508,7 +674,7 @@ input[type=text], select, textarea {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: " one ""two ""three""four""five""si";
-
+        z-index:0;
     }
 
     p.one,
@@ -561,6 +727,23 @@ input[type=text], select, textarea {
         width:100%;
         height:1fr;
 }
+.mySlidesPoster {
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .prevposter,
+.nextposter {
+  
+  top: 200%;
+  
+}
+.nextposter {
+    right:0;
+    border-radius: 3px 0 0 3px;
+  }
+
     #animalgrid{
         grid-template-columns: 1fr;
         grid-template-rows: .5fr .5fr .5fr .5fr .01fr;
@@ -569,4 +752,61 @@ input[type=text], select, textarea {
     img.animalpic{
         width:100%;
     }
+
+    #flowergrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .5fr .5fr .5fr .01fr;
+        grid-template-areas: "a""b""flowerpics""flowerdesc""e";
+    }
+    img.flowerone, img.flowertwo, img.flowerthree{
+        width:100%;
+    }
+    .prevflower,
+    .nextflower {
+      
+      top: 125%;
+     
+    }
+    h3.flowerarticle{
+        font-size: 14px;
+    }
+
+    .nextflower {
+        right:0;
+        border-radius: 3px 0 0 3px;
+      }
+  #resumegrid{
+    grid-template-columns: 1fr;
+    grid-template-rows: .25fr .25fr 1fr .01fr;
+    grid-template-areas: "a"
+    "b"
+     "resume"
+    "e"
+  }
+  #res_desc{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "obj" "edu" "exp" "leader" "skills";
+      width:90vw;
+      
+  }
+  
+  #skills{
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr .5fr .5fr .5fr .5fr .5fr .5fr;
+    grid-template-areas: "skillstop" "listone" "listtwo" "listthree" "listfour" "listfive" "listsix" "listseven";
+  }
+  
+  h4.edu,h4.obj,h4.exp,h4.leader,h4.skills{
+    font-size: 16px;
+  }
+  p.obj,p.edu,p.exp,p.leader{
+      font-size:14px;
+  }
+  p.numone,p.numtwo,p.numthree, p.numfour, p.numfive,p.numsix,p.numseven{
+      font-size:14px;
+  }
+
+  
 }

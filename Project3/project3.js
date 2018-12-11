@@ -1,27 +1,46 @@
-// $("footer").click(function () {
-//     $("html, body").animate({
-//         scrollTop: 0
-//     }, 1000);
-// });
-$(document).ready(function(){
-$("footer").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-    
-  });
+$(document).ready(function() {
+$("footer").click(function () {
+    $("html, body").animate({
+        scrollTop: 0
+    }, "slow");
 
 });
 
-// $("#circle").scroll(function(){
-//     function startAnimation(){
-//         function startAnimation(){
-//             div.animate({height: 300}, "slow");
-//         }
-// });
-// $("html,body").scroll(function(){
-//     var div = $("#circle");
-//     startAnimation();
-//     function startAnimation(){
-//         div.animate({height: 300}, "slow");
-        
-//     }
-// });
+$('p.two').click(function () {
+
+    $('html, body').animate({
+        scrollTop: $("div.poster").offset().top
+    }, 2000);
+
+});
+
+$('p.three').click(function () {
+
+    $('html, body').animate({
+        scrollTop: $("div.animal").offset().top
+    }, 2000);
+
+});
+$('p.four').click(function () {
+
+    $('html, body').animate({
+        scrollTop: $("div.flower").offset().top
+    }, 2000);
+});
+$('p.five').click(function () {
+
+    $('html, body').animate({
+        scrollTop: $("div.resume").offset().top
+    }, 2000);
+});
+
+$('p.si').click(function () {
+
+    $('html, body').animate({
+        scrollTop: $("div.contact").offset().top
+    }, 2000);
+});
+
+});
+
+

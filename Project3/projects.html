@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="project3.css">
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.js"></script>
-    <link rel="scriptsheet" href="project3.js">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="project3.css">
+        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.js"></script>
+        <script src="project3.js"></script> 
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Projects</title>
 </head>
 <div id="circle"></div>
@@ -21,11 +21,11 @@
         <h1>PORTFOLIO</h1>
     </header>
     <nav>
-        <p class="one">Home</li>
-            <p class="two">Body Positivity Poster</li>
-                <p class="three">Animal Word</li>
-                    <p class="four">Flower Power Program</li>
-                        <p class="five">Resume</li>
+        <p class="one">Home</p>
+            <p class="two">Body Positivity Poster</p>
+                <p class="three">Animal Word</p>
+                    <p class="four">Flower Power Program</p>
+                        <p class="five">Resume</p>
                             <p class="si">Contact</p>
 
     </nav>
@@ -84,50 +84,3 @@
 </body>
 
 </html>
-<script>
-    $(document).ready(function () {
-        $("footer").click(function () {
-            $("html, body").animate({
-                scrollTop: 0
-            }, "slow");
-
-        });
-        $('p.two').click(function () {
-
-            $('html, body').animate({
-                scrollTop: $("div.poster").offset().top
-            }, 2000);
-
-        });
-
-        $('p.three').click(function () {
-
-            $('html, body').animate({
-                scrollTop: $("div.animal").offset().top
-            }, 2000);
-
-        });
-        $('p.four').click(function () {
-
-            $('html, body').animate({
-                scrollTop: $("div.flower").offset().top
-            }, 2000);
-        });
-        $('p.five').click(function () {
-
-            $('html, body').animate({
-                scrollTop: $("div.resume").offset().top
-            }, 2000);
-        });
-
-        $('p.si').click(function () {
-
-            $('html, body').animate({
-                scrollTop: $("div.contact").offset().top
-            }, 2000);
-        });
-        
-    });
-
-
-</script>

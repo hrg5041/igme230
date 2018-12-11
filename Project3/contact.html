@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
@@ -7,55 +8,68 @@
     <link rel="stylesheet" href="project3.css">
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.js"></script>
-    <link rel="scriptsheet" href="project3.js">
+    <script src="project3.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Contact</title>
 </head>
+
 <body>
     <div id="contactgrid">
-<header>
-        <h1>Contact</h1>
-    </header>
-    <nav>
-            <p class="one">Home</li>
-                <p class="two">Body Positivity Poster</li>
-                    <p class="three">Animal Word</li>
-                        <p class="four">Flower Power Program</li>
-                            <p class="five">Resume</li>
-                                <p class="si">Contact</p>
+        <header>
+            <h1>Contact</h1>
+        </header>
+        <nav>
+            <a href="index.html">
+                <p class="one">Home</p>
+            </a>
+            <a href="poster.html">
+                <p class="two">Body Positivity Poster</p>
+            </a>
+            <a href="animal_word.html">
+                <p class="three">Animal Word</p>
+            </a>
+            <a href="flower_power.html">
+                <p class="four">Flower Power Program</p>
+            </a>
+            <a href="resume.html">
+                <p class="five">Resume</p>
+            </a>
+            <a href="contact.html">
+            <p class="si">Contact</p>
+        </a>
 
         </nav>
         <div class="container">
-                <form action="https://formspree.io/hrg5041@rit.edu" method="POST">
-              
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
-              
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-              
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-              
-                  <input type="submit" value="Submit">
-              
-                </form>
-              </div>
-    </form>
-    <footer>
+            <form action="https://formspree.io/hrg5041@rit.edu" method="POST">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        </form>
+        <footer>
             <h2>BACK TO THE TOP</h2>
         </footer>
-</div>
+    </div>
 </body>
 
 </html>
 <script>
-$(document).ready(function () {
-    $("footer").click(function () {
-        $("html, body").animate({
-            scrollTop: 0
-        }, "slow");
+    $(document).ready(function () {
+        $("footer").click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, "slow");
 
+        });
     });
-});
 </script>
