@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: aquamarine;
+    height: 300px;
+  }
+  .item {
+    order: 1;
+    
+    background-color: antiquewhite;
+    margin:50px;  /* default is 0 */
+  }
+  .item-a{
+      justify-content: space-evenly;
+      margin: 10px;
+      order:0;
+      background-color: red;
+  }
+  .item-b{
+    width: 100px;  /* Or whatever */
+    height: 100px; /* Or whatever */
+    margin: auto; 
+    align-content: center;
+    align-items: center;
+  }
+  .item-c{
+    display: flex;
+    flex-flow: row wrap;
+    /* This aligns items to the end line on main-axis */
+    justify-content: flex-end;
+    order:5;
+    flex-direction: column;
+  }
