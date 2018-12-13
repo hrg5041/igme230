@@ -10,6 +10,7 @@
     
     background-color: antiquewhite;
     margin:50px;  /* default is 0 */
+    padding:40px;
   }
   .item-a{
       justify-content: space-evenly;
@@ -18,17 +19,34 @@
       background-color: red;
   }
   .item-b{
+      display: flex;
     width: 100px;  /* Or whatever */
     height: 100px; /* Or whatever */
     margin: auto; 
-    align-content: center;
+    justify-content: center;
     align-items: center;
+
   }
   .item-c{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     /* This aligns items to the end line on main-axis */
-    justify-content: flex-end;
+    justify-content: center;
     order:5;
     flex-direction: column;
+    background-color: green;
+    padding: 12px;
+    margin:12px;
+  }
+
+  ul{
+      list-style: none;
+      margin:0;
+      display: flex;
+      justify-content: flex-end;
+      order:6;
+      
+  }
+  li{
+      margin:10px;
   }
